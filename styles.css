@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    perspective: 1000px;
+}
+
+.cube-3d {
+    width: 150px;
+    height: 150px;
+}
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid;
+}
+
+.btn {
+    margin-top: 140px;
+    padding: 10px 40px;
+    border: none;
+    background-color: rgb(199, 27, 53);
+    color: #ffff;
+    box-shadow: #ffff -1px 1px, #ffff -2px 2px, #ffff -3px 3px, #ffff -4px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Al presionar el botón, se activa una animación que mueve el botón hacia arriba,
+   utilizando la pseudoclase :active para aplicar estilos durante el clic del botón primario. */
+.btn:active {
+    transform: translateY(-5px);
+}
+
+/* rotateY() un valor positivo rotará el elemento hacia la derecha en el eje Y (vertical), translateZ moverá el elemento a lo largo del eje Z */
+.right-side {background-color: rgb(31, 255, 10); transform: rotateY(90deg) translateZ(75px)}
+
+/* un valor negativo rotará el elemento hacia la izquierda del eje Y (vertical) */
+.left-side {background-color: rgb(31, 255, 10); transform: rotateY(-90deg) translateZ(75px)}
+
+/* rotateX() un valor positivo rotará el elemento hacia arriba alrededor del eje X */
+.top {background-color: rgb(31, 255, 10); transform: rotateX(90deg) translateZ(75px)}
+
+.back {background-color: rgb(31, 255, 10); transform: rotateX(180deg) translateZ(75px)}
+
+/* rotateX() un valor negativo rotará el elemento hacia abajo alrededor del eje X (horizontal) */
+.bottom {background-color: rgb(31, 255, 10); transform: rotateX(-90deg) translateZ(75px)}
+
+.front-side {background-color: rgb(31, 255, 10); transform: translateZ(75px);}
+
+.animation {
+    transform-style: preserve-3d;
+    animation: cubo3D 5s linear infinite;
+}
+
+@keyframes cubo3D {
+    0% {transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+    100% {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+}
+
