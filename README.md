@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este repositorio contiene el código para un proyecto de animación 3D llamado "cubo3D". Utiliza CSS3 para crear una animación interactiva de un cubo en 3D, aprovechando las propiedades de transformación y animación para lograr movimientos y rotaciones realistas.
+Este repositorio contiene el código para una animación interactiva en 3D. Utiliza CSS3 para crear movimientos y rotaciones realistas de un cubo, aprovechando las avanzadas capacidades de diseño y animación de CSS3.
 
 ## Características Técnicas
 
@@ -13,4 +13,4 @@ Este repositorio contiene el código para un proyecto de animación 3D llamado "
 
 ## Propósito
 
-Este proyecto demuestra la capacidad de CSS3 para crear experiencias de usuario ricas y atractivas a través de animaciones 3D interactivas, sin necesidad de bibliotecas o frameworks externos.
+El propósito es demostrar cómo CSS3 puede generar experiencias de usuario atractivas y dinámicas sin necesidad de utilizar bibliotecas externas, resaltando el potencial de CSS3 en el desarrollo web moderno.
